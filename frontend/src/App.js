@@ -1,5 +1,6 @@
 import './App.css';
 import AppNavbar from './Components/Navbar/ResponsiveNavbar';
+import Footer from './Components/Footer/Footer';
 import Medicine from './Components/Medicine/Medicine';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -48,6 +49,7 @@ function App() {
     <Router>
       <div className="App">
         <AppNavbar name={username} />
+        <Footer/>
         {renderRoutes()}
       </div>
     </Router>
