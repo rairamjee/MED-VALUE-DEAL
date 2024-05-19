@@ -1,0 +1,11 @@
+@media (min-width: 993px) {
+    .features {
+      margin-left: 2rem;
+    }
+  }
+
+  @media (min-width: 1130px) {
+    .features {
+      margin-left: 5rem;
+    }
+  }
