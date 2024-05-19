@@ -99,6 +99,8 @@ h3, h2, h4, p {
   font-size: 24px;
   margin-top: 3rem;
   margin-left: 6rem;
+  font-family: 'Courier New', Courier, monospace;
+  
 }
 /* Slider section */
 /* .top {
@@ -186,6 +188,7 @@ color: #808080;
 
 /* Concern section */
 #concern {
+  margin-top: 5rem;
   padding: 20px 0;
 }
 
@@ -219,12 +222,18 @@ color: #808080;
 
 /* Health articles section */
 #health {
+  margin-top: 7rem;
   padding: 20px 0;
 }
 
 .health-1 {
   /* text-align: center; */
   margin-left: 6rem;
+}
+
+.health-1 h2{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 24px;
 }
 
 .health-2 {
@@ -263,6 +272,12 @@ color: #808080;
   width:1200px;
 }
 
+/* Customer Review */
+
+.customer-comments{
+  margin-top: 9rem;
+}
+
 .comments{
   margin-top: 3rem;
   display: flex;
@@ -271,6 +286,7 @@ color: #808080;
   justify-content: center;
   align-items: center;
   gap: 5rem;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .person{
@@ -293,7 +309,7 @@ color: #808080;
   border: 1px solid #a8f1ee;
   border-radius: 1rem;
   color: #808080;
-  height: 250px;
+  height: 350px;
 }
 
 .comt p span{

@@ -154,7 +154,8 @@ const HomePage = () => {
 
       <div id="health">
         <div className="health-1">
-          <h2>Health Articles</h2>
+          <h2><b>Health Articles</b>
+          </h2>
           {/* <p>Get up-to-date information from our healthcare experts</p> */}
         </div>
         <div className="health-2">

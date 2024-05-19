@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Singup from './Components/Signup/Signup';
 import Login from './Components/Login/Login';
 import Surgeries from './Components/Surgeries/Surgeries'
+import HomePage from './Components/Home/Home';
 import { auth } from './firebase';
 import React, { useEffect, useState } from 'react';
 
@@ -49,6 +50,7 @@ function App() {
     <Router>
       <div className="App">
         <AppNavbar name={username} />
+        <HomePage/>
         <Footer/>
         {renderRoutes()}
       </div>
