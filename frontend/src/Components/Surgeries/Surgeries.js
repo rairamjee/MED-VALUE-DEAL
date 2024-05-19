@@ -1,359 +1,424 @@
-import "./Surheries.module.css";
+
+import styles from "./Surheries.module.css";
+
 export default function Surgeries() {
 
-
+    function copyNumber(phoneNumber) {
+        navigator.clipboard.writeText(phoneNumber).catch(err => {
+            console.error('Failed to copy: ', err);
+        });
+    }
     return (
         <>
-            <p><center><h1>Find Your City</h1></center></p>
-            <div-container>
-                <div class="btn-group">
-                    <div class="dropdown">
-                        <button class="dropdown-btn">Kolkata</button>
-                       
-                        <div class="dropdown-content">
-                           
-                            <a href="#">8910171611</a>
-                            <a href="#">9830120158</a>
-                            <a href="#">9477229182</a>
-                            <a href="#">6290805022</a>
-                        </div>
-                    </div>
-                    <div class="dropdown">
-                        <button class="dropdown-btn">Delhi</button>
-                       
-                        <div class="dropdown-content">
-                           
-                            <a href="#">8910171611</a>
-                            <a href="#">9830120158</a>
-                            <a href="#">9477229182</a>
-                        </div>
-                    </div>
-                    <div class="dropdown">
-                        <button class="dropdown-btn">Mumbai</button>
-                       
-                        <div class="dropdown-content">
-                           
-                            <a href="#">8910171611</a>
-                            <a href="#">9830120158</a>
-                        </div>
-                    </div>
-                    <div class="dropdown">
-                        <button class="dropdown-btn">Haryana</button>
-                       
-                        <div class="dropdown-content">
-                           
-                            <a href="#">8910171611</a>
-                            <a href="#">9830120158</a>
-                            <a href="#">9477229182</a>
-                            <a href="#">6290805022</a>
-                        </div>
-                    </div>
-                    <div class="dropdown">
-                        <button class="dropdown-btn">Bihar</button>
-                      
-                        <div class="dropdown-content">
-                          
-                            <a href="#">8910171611</a>
-                            <a href="#">9830120158</a>
-                            <a href="#">9477229182</a>
-                            <a href="#">6290805022</a>
-                        </div>
-                    </div>
-                    <div class="dropdown">
-                        <button class="dropdown-btn">Pune</button>
-                       
-                        <div class="dropdown-content">
-                           
-                            <a href="#">8910171611</a>
-                            <a href="#">9830120158</a>
-                        </div>
-                    </div>
-                    <div class="dropdown">
-                        <button class="dropdown-btn">Bengaluru</button>
-                       
-                        <div class="dropdown-content">
-                           
-                            <a href="#">8910171611</a>
-                            <a href="#">9830120158</a>
-                            <a href="#">9477229182</a>
-                            <a href="#">6290805022</a>
-                        </div>
-                    </div>
-                    <div class="dropdown">
-                        <button class="dropdown-btn">Chennai</button>
-                       
-                        <div class="dropdown-content">
-                           
-                            <a href="#">8910171611</a>
-                            <a href="#">9830120158</a>
-                            <a href="#">9477229182</a>
-                            <a href="#">6290805022</a>
-                        </div>
-                    </div>
-                    <div class="dropdown">
-                        <button class="dropdown-btn">Ahemdabad</button>
-                       
-                        <div class="dropdown-content">
-                           
-                            <a href="#">8910171611</a>
-                            <a href="#">9830120158</a>
-                            <a href="#">9477229182</a>
-                            <a href="#">6290805022</a>
-                        </div>
-                    </div>
-                    <div class="dropdown">
-                        <button class="dropdown-btn">Surat</button>
-                       
-                        <div class="dropdown-content">
-                           
-                            <a href="#">8910171611</a>
-                            <a href="#">9830120158</a>
-                            <a href="#">9477229182</a>
-                            <a href="#">6290805022</a>
-                        </div>
-                    </div>
-                    <div class="dropdown">
-                        <button class="dropdown-btn">Jaipur</button>
-                       
-                        <div class="dropdown-content">
-                           
-                            <a href="#">8910171611</a>
-                            <a href="#">9830120158</a>
-                            <a href="#">9477229182</a>
-                            <a href="#">6290805022</a>
-                            <a href="#">9477229182</a>
-                            <a href="#">6290805022</a>
-                        </div>
-                    </div>
-                    <div class="dropdown">
-                        <button class="dropdown-btn">Lucknow</button>
-                       
-                        <div class="dropdown-content">
-                           
-                            <a href="#">8910171611</a>
-                            <a href="#">9830120158</a>
-                            <a href="#">9477229182</a>
-                            <a href="#">6290805022</a>
-                            <a href="#">9790236772</a>
-                        </div>
-                    </div>
-                    <div class="dropdown">
-                        <button class="dropdown-btn">Gorakhpur</button>
-                       
-                        <div class="dropdown-content">
-                           
-                            <a href="#">8910171611</a>
-                            <a href="#">9830120158</a>
-                            <a href="#">9477229182</a>
-                            <a href="#">6290805022</a>
-                        </div>
-                    </div>
-                    <div class="dropdown">
-                        <button class="dropdown-btn">Kanpur</button>
-                       
-                        <div class="dropdown-content">
-                           
-                            <a href="#">8910171611</a>
-                            <a href="#">9830120158</a>
-                            <a href="#">9477229182</a>
-                            <a href="#">6290805022</a>
-                            <a href="#">9790236772</a>
-                        </div>
-                    </div>
-                    <div class="dropdown">
-                        <button class="dropdown-btn">Nagpur</button>
-                       
-                        <div class="dropdown-content">
-                           
-                            <a href="#">8910171611</a>
-                            <a href="#">9830120158</a>
-                            <a href="#">9477229182</a>
-                        </div>
-                    </div>
+       
+            <div style={{ textAlign: 'center' }}>
+                <br/>
+                <h4>Immediate help at your fingertips. Click on the numbers below to call an ambulance in an emergency<i class="bi bi-bandaid-fill"></i></h4>
 
-                    <button>Patna</button>
-                    <div class="dropdown">
-                        <button class="dropdown-btn">Indore</button>
-                       
-                        <div class="dropdown-content">
-                           
-                            <a href="#">8910171611</a>
-                            <a href="#">9830120158</a>
-                            <a href="#">9477229182</a>
-                            <a href="#">6290805022</a>
-                            <a href="#">9790236772</a>
-                        </div>
+                <h1 >Find Your City<i class="bi bi-search"></i></h1>
+            </div>
+            <div className={styles['btn-group']}>
+                <div className={styles.dropdown}>
+                    <button className={styles['dropdown-btn']}>Kolkata</button>
+                    <div className={styles['dropdown-content']}>
+                        <a href="tel:8910171611">8910171611{" "}<span onClick={() => copyNumber('8910171611')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:9830120158">9830120158{" "}<span onClick={() => copyNumber('9830120158')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:9477229182">9477229182{" "}<span onClick={() => copyNumber('9477229182')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:6290805022">6290805022{" "}<span onClick={() => copyNumber('6290805022')}><i class="bi bi-copy"></i></span></a>
                     </div>
-                    <button>Bhopal</button>
-                    <div class="dropdown">
-                        <button class="dropdown-btn">Agra</button>
-                       
-                        <div class="dropdown-content">
-                           
-                            <a href="#">8910171611</a>
-                            <a href="#">9830120158</a>
-                            <a href="#">9477229182</a>
-                            <a href="#">6290805022</a>
-                        </div>
+                </div>
+                <div className={styles.dropdown}>
+                    <button className={styles['dropdown-btn']}>Haryana</button>
+                    <div className={styles['dropdown-content']}>
+                        <a href="tel:8910171611">8910171611{" "}<span onClick={() => copyNumber('8910171611')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:9830120158">9830120158{" "}<span onClick={() => copyNumber('9830120158')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:9477229182">9477229182{" "}<span onClick={() => copyNumber('9477229182')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:6290805022">6290805022{" "}<span onClick={() => copyNumber('6290805022')}><i class="bi bi-copy"></i></span></a>
                     </div>
+                </div>
+                <div className={styles.dropdown}>
+                    <button className={styles['dropdown-btn']}>Bihar</button>
+                    <div className={styles['dropdown-content']}>
+                        <a href="tel:8910171611">8910171611{" "}<span onClick={() => copyNumber('8910171611')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:9830120158">9830120158{" "}<span onClick={() => copyNumber('9830120158')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:9477229182">9477229182{" "}<span onClick={() => copyNumber('9477229182')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:6290805022">6290805022{" "}<span onClick={() => copyNumber('6290805022')}><i class="bi bi-copy"></i></span></a>
+                    </div>
+                </div>
+                <div className={styles.dropdown}>
+                    <button className={styles['dropdown-btn']}>Pune</button>
+                    <div className={styles['dropdown-content']}>
+                        <a href="tel:8910171611">8910171611{" "}<span onClick={() => copyNumber('8910171611')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:9830120158">9830120158{" "}<span onClick={() => copyNumber('9830120158')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:9477229182">9477229182{" "}<span onClick={() => copyNumber('9477229182')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:6290805022">6290805022{" "}<span onClick={() => copyNumber('6290805022')}><i class="bi bi-copy"></i></span></a>
+                    </div>
+                </div>
+                <div className={styles.dropdown}>
+                    <button className={styles['dropdown-btn']}>Bengaluru</button>
+                    <div className={styles['dropdown-content']}>
+                        <a href="tel:8910171611">8910171611{" "}<span onClick={() => copyNumber('8910171611')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:9830120158">9830120158{" "}<span onClick={() => copyNumber('9830120158')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:9477229182">9477229182{" "}<span onClick={() => copyNumber('9477229182')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:6290805022">6290805022{" "}<span onClick={() => copyNumber('6290805022')}><i class="bi bi-copy"></i></span></a>
+                    </div>
+                </div>
+                <div className={styles.dropdown}>
+                    <button className={styles['dropdown-btn']}>Chennai</button>
+                    <div className={styles['dropdown-content']}>
+                        <a href="tel:8910171611">8910171611{" "}<span onClick={() => copyNumber('8910171611')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:9830120158">9830120158{" "}<span onClick={() => copyNumber('9830120158')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:9477229182">9477229182{" "}<span onClick={() => copyNumber('9477229182')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:6290805022">6290805022{" "}<span onClick={() => copyNumber('6290805022')}><i class="bi bi-copy"></i></span></a>
+                    </div>
+                </div>
+                <div className={styles.dropdown}>
+                    <button className={styles['dropdown-btn']}>Ahemdabad</button>
+                    <div className={styles['dropdown-content']}>
+                        <a href="tel:8910171611">8910171611{" "}<span onClick={() => copyNumber('8910171611')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:9830120158">9830120158{" "}<span onClick={() => copyNumber('9830120158')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:9477229182">9477229182{" "}<span onClick={() => copyNumber('9477229182')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:6290805022">6290805022{" "}<span onClick={() => copyNumber('6290805022')}><i class="bi bi-copy"></i></span></a>
+                    </div>
+                </div>
+                <div className={styles.dropdown}>
+                    <button className={styles['dropdown-btn']}>Surat</button>
+                    <div className={styles['dropdown-content']}>
+                        <a href="tel:8910171611">8910171611{" "}<span onClick={() => copyNumber('8910171611')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:9830120158">9830120158{" "}<span onClick={() => copyNumber('9830120158')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:9477229182">9477229182{" "}<span onClick={() => copyNumber('9477229182')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:6290805022">6290805022{" "}<span onClick={() => copyNumber('6290805022')}><i class="bi bi-copy"></i></span></a>
+                    </div>
+                </div>
+                <div className={styles.dropdown}>
+                    <button className={styles['dropdown-btn']}>Jaipur</button>
+                    <div className={styles['dropdown-content']}>
+                        <a href="tel:8910171611">8910171611{" "}<span onClick={() => copyNumber('8910171611')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:9830120158">9830120158{" "}<span onClick={() => copyNumber('9830120158')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:9477229182">9477229182{" "}<span onClick={() => copyNumber('9477229182')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:6290805022">6290805022{" "}<span onClick={() => copyNumber('6290805022')}><i class="bi bi-copy"></i></span></a>
+                    </div>
+                </div>
+                <div className={styles.dropdown}>
+                    <button className={styles['dropdown-btn']}>Lucknow</button>
+                    <div className={styles['dropdown-content']}>
+                        <a href="tel:8910171611">8910171611{" "}<span onClick={() => copyNumber('8910171611')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:9830120158">9830120158{" "}<span onClick={() => copyNumber('9830120158')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:9477229182">9477229182{" "}<span onClick={() => copyNumber('9477229182')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:6290805022">6290805022{" "}<span onClick={() => copyNumber('6290805022')}><i class="bi bi-copy"></i></span></a>
+                    </div>
+                </div>
+                <div className={styles.dropdown}>
+                    <button className={styles['dropdown-btn']}>Gorakhpur</button>
+                    <div className={styles['dropdown-content']}>
+                        <a href="tel:8910171611">8910171611{" "}<span onClick={() => copyNumber('8910171611')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:9830120158">9830120158{" "}<span onClick={() => copyNumber('9830120158')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:9477229182">9477229182{" "}<span onClick={() => copyNumber('9477229182')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:6290805022">6290805022{" "}<span onClick={() => copyNumber('6290805022')}><i class="bi bi-copy"></i></span></a>
+                    </div>
+                </div>
+                <div className={styles.dropdown}>
+                    <button className={styles['dropdown-btn']}>Kanpur</button>
+                    <div className={styles['dropdown-content']}>
+                        <a href="tel:8910171611">8910171611{" "}<span onClick={() => copyNumber('8910171611')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:9830120158">9830120158{" "}<span onClick={() => copyNumber('9830120158')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:9477229182">9477229182{" "}<span onClick={() => copyNumber('9477229182')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:6290805022">6290805022{" "}<span onClick={() => copyNumber('6290805022')}><i class="bi bi-copy"></i></span></a>
+                    </div>
+                </div>
+                <div className={styles.dropdown}>
+                    <button className={styles['dropdown-btn']}>Nagpur</button>
+                    <div className={styles['dropdown-content']}>
+                        <a href="tel:8910171611">8910171611{" "}<span onClick={() => copyNumber('8910171611')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:9830120158">9830120158{" "}<span onClick={() => copyNumber('9830120158')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:9477229182">9477229182{" "}<span onClick={() => copyNumber('9477229182')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:6290805022">6290805022{" "}<span onClick={() => copyNumber('6290805022')}><i class="bi bi-copy"></i></span></a>
+                    </div>
+                </div>
+                <div className={styles.dropdown}>
+                    <button className={styles['dropdown-btn']}>Indore</button>
+                    <div className={styles['dropdown-content']}>
+                        <a href="tel:8910171611">8910171611{" "}<span onClick={() => copyNumber('8910171611')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:9830120158">9830120158{" "}<span onClick={() => copyNumber('9830120158')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:9477229182">9477229182{" "}<span onClick={() => copyNumber('9477229182')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:6290805022">6290805022{" "}<span onClick={() => copyNumber('6290805022')}><i class="bi bi-copy"></i></span></a>
+                    </div>
+                </div>
+                <div className={styles.dropdown}>
+                    <button className={styles['dropdown-btn']}>Agra</button>
+                    <div className={styles['dropdown-content']}>
+                        <a href="tel:8910171611">8910171611{" "}<span onClick={() => copyNumber('8910171611')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:9830120158">9830120158{" "}<span onClick={() => copyNumber('9830120158')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:9477229182">9477229182{" "}<span onClick={() => copyNumber('9477229182')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:6290805022">6290805022{" "}<span onClick={() => copyNumber('6290805022')}><i class="bi bi-copy"></i></span></a>
+                    </div>
+                </div>
+                <div className={styles.dropdown}>
+                    <button className={styles['dropdown-btn']}>Moradabad </button>
+                    <div className={styles['dropdown-content']}>
+                        <a href="tel:8910171611">8910171611{" "}<span onClick={() => copyNumber('8910171611')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:9830120158">9830120158{" "}<span onClick={() => copyNumber('9830120158')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:9477229182">9477229182{" "}<span onClick={() => copyNumber('9477229182')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:6290805022">6290805022{" "}<span onClick={() => copyNumber('6290805022')}><i class="bi bi-copy"></i></span></a>
+                    </div>
+                </div>
+                <div className={styles.dropdown}>
+                    <button className={styles['dropdown-btn']}>Meerut</button>
+                    <div className={styles['dropdown-content']}>
+                        <a href="tel:8910171611">8910171611{" "}<span onClick={() => copyNumber('8910171611')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:9830120158">9830120158{" "}<span onClick={() => copyNumber('9830120158')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:9477229182">9477229182{" "}<span onClick={() => copyNumber('9477229182')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:6290805022">6290805022{" "}<span onClick={() => copyNumber('6290805022')}><i class="bi bi-copy"></i></span></a>
+                    </div>
+                </div>
+                <div className={styles.dropdown}>
+                    <button className={styles['dropdown-btn']}>Aligarh </button>
+                    <div className={styles['dropdown-content']}>
+                        <a href="tel:8910171611">8910171611{" "}<span onClick={() => copyNumber('8910171611')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:9830120158">9830120158{" "}<span onClick={() => copyNumber('9830120158')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:9477229182">9477229182{" "}<span onClick={() => copyNumber('9477229182')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:6290805022">6290805022{" "}<span onClick={() => copyNumber('6290805022')}><i class="bi bi-copy"></i></span></a>
+                    </div>
+                </div>
+                <div className={styles.dropdown}>
+                    <button className={styles['dropdown-btn']}>Kolhapur </button>
+                    <div className={styles['dropdown-content']}>
+                        <a href="tel:8910171611">8910171611{" "}<span onClick={() => copyNumber('8910171611')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:9830120158">9830120158{" "}<span onClick={() => copyNumber('9830120158')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:9477229182">9477229182{" "}<span onClick={() => copyNumber('9477229182')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:6290805022">6290805022{" "}<span onClick={() => copyNumber('6290805022')}><i class="bi bi-copy"></i></span></a>
+                    </div>
+                </div>
+                <div className={styles.dropdown}>
+                    <button className={styles['dropdown-btn']}>Asansol </button>
+                    <div className={styles['dropdown-content']}>
+                        <a href="tel:8910171611">8910171611{" "}<span onClick={() => copyNumber('8910171611')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:9830120158">9830120158{" "}<span onClick={() => copyNumber('9830120158')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:9477229182">9477229182{" "}<span onClick={() => copyNumber('9477229182')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:6290805022">6290805022{" "}<span onClick={() => copyNumber('6290805022')}><i class="bi bi-copy"></i></span></a>
+                    </div>
+                </div>
+                <div className={styles.dropdown}>
+                    <button className={styles['dropdown-btn']}>Udaipur </button>
+                    <div className={styles['dropdown-content']}>
+                        <a href="tel:8910171611">8910171611{" "}<span onClick={() => copyNumber('8910171611')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:9830120158">9830120158{" "}<span onClick={() => copyNumber('9830120158')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:9477229182">9477229182{" "}<span onClick={() => copyNumber('9477229182')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:6290805022">6290805022{" "}<span onClick={() => copyNumber('6290805022')}><i class="bi bi-copy"></i></span></a>
+                    </div>
+                </div>
+                <div className={styles.dropdown}>
+                    <button className={styles['dropdown-btn']}>Jamshedpur </button>
+                    <div className={styles['dropdown-content']}>
+                        <a href="tel:8910171611">8910171611{" "}<span onClick={() => copyNumber('8910171611')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:9830120158">9830120158{" "}<span onClick={() => copyNumber('9830120158')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:9477229182">9477229182{" "}<span onClick={() => copyNumber('9477229182')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:6290805022">6290805022{" "}<span onClick={() => copyNumber('6290805022')}><i class="bi bi-copy"></i></span></a>
+                    </div>
+                </div>
+                <div className={styles.dropdown}>
+                    <button className={styles['dropdown-btn']}>Amritsar </button>
+                    <div className={styles['dropdown-content']}>
+                        <a href="tel:8910171611">8910171611{" "}<span onClick={() => copyNumber('8910171611')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:9830120158">9830120158{" "}<span onClick={() => copyNumber('9830120158')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:9477229182">9477229182{" "}<span onClick={() => copyNumber('9477229182')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:6290805022">6290805022{" "}<span onClick={() => copyNumber('6290805022')}><i class="bi bi-copy"></i></span></a>
+                    </div>
+                </div>
+                <div className={styles.dropdown}>
+                    <button className={styles['dropdown-btn']}>Surat </button>
+                    <div className={styles['dropdown-content']}>
+                        <a href="tel:8910171611">8910171611{" "}<span onClick={() => copyNumber('8910171611')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:9830120158">9830120158{" "}<span onClick={() => copyNumber('9830120158')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:9477229182">9477229182{" "}<span onClick={() => copyNumber('9477229182')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:6290805022">6290805022{" "}<span onClick={() => copyNumber('6290805022')}><i class="bi bi-copy"></i></span></a>
+                    </div>
+                </div>
+                <div className={styles.dropdown}>
+                    <button className={styles['dropdown-btn']}>Shimla </button>
+                    <div className={styles['dropdown-content']}>
+                        <a href="tel:8910171611">8910171611{" "}<span onClick={() => copyNumber('8910171611')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:9830120158">9830120158{" "}<span onClick={() => copyNumber('9830120158')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:9477229182">9477229182{" "}<span onClick={() => copyNumber('9477229182')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:6290805022">6290805022{" "}<span onClick={() => copyNumber('6290805022')}><i class="bi bi-copy"></i></span></a>
+                    </div>
+                </div>
+                <div className={styles.dropdown}>
+                    <button className={styles['dropdown-btn']}>Ranchi </button>
+                    <div className={styles['dropdown-content']}>
+                        <a href="tel:8910171611">8910171611{" "}<span onClick={() => copyNumber('8910171611')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:9830120158">9830120158{" "}<span onClick={() => copyNumber('9830120158')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:9477229182">9477229182{" "}<span onClick={() => copyNumber('9477229182')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:6290805022">6290805022{" "}<span onClick={() => copyNumber('6290805022')}><i class="bi bi-copy"></i></span></a>
+                    </div>
+                </div>
+                <div className={styles.dropdown}>
+                    <button className={styles['dropdown-btn']}>Chandigarh </button>
+                    <div className={styles['dropdown-content']}>
+                        <a href="tel:8910171611">8910171611{" "}<span onClick={() => copyNumber('8910171611')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:9830120158">9830120158{" "}<span onClick={() => copyNumber('9830120158')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:9477229182">9477229182{" "}<span onClick={() => copyNumber('9477229182')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:6290805022">6290805022{" "}<span onClick={() => copyNumber('6290805022')}><i class="bi bi-copy"></i></span></a>
+                    </div>
+                </div>
+                <div className={styles.dropdown}>
+                    <button className={styles['dropdown-btn']}>Thiruvananthapuram </button>
+                    <div className={styles['dropdown-content']}>
+                        <a href="tel:8910171611">8910171611{" "}<span onClick={() => copyNumber('8910171611')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:9830120158">9830120158{" "}<span onClick={() => copyNumber('9830120158')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:9477229182">9477229182{" "}<span onClick={() => copyNumber('9477229182')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:6290805022">6290805022{" "}<span onClick={() => copyNumber('6290805022')}><i class="bi bi-copy"></i></span></a>
+                    </div>
+                </div>
+                <div className={styles.dropdown}>
+                    <button className={styles['dropdown-btn']}>Bhopal </button>
+                    <div className={styles['dropdown-content']}>
+                        <a href="tel:8910171611">8910171611{" "}<span onClick={() => copyNumber('8910171611')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:9830120158">9830120158{" "}<span onClick={() => copyNumber('9830120158')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:9477229182">9477229182{" "}<span onClick={() => copyNumber('9477229182')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:6290805022">6290805022{" "}<span onClick={() => copyNumber('6290805022')}><i class="bi bi-copy"></i></span></a>
+                    </div>
+                </div>
+                <div className={styles.dropdown}>
+                    <button className={styles['dropdown-btn']}>Maharashtra</button>
+                    <div className={styles['dropdown-content']}>
+                        <a href="tel:8910171611">8910171611{" "}<span onClick={() => copyNumber('8910171611')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:9830120158">9830120158{" "}<span onClick={() => copyNumber('9830120158')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:9477229182">9477229182{" "}<span onClick={() => copyNumber('9477229182')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:6290805022">6290805022{" "}<span onClick={() => copyNumber('6290805022')}><i class="bi bi-copy"></i></span></a>
+                    </div>
+                </div>
+                <div className={styles.dropdown}>
+                    <button className={styles['dropdown-btn']}>Nagaland</button>
+                    <div className={styles['dropdown-content']}>
+                        <a href="tel:8910171611">8910171611{" "}<span onClick={() => copyNumber('8910171611')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:9830120158">9830120158{" "}<span onClick={() => copyNumber('9830120158')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:9477229182">9477229182{" "}<span onClick={() => copyNumber('9477229182')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:6290805022">6290805022{" "}<span onClick={() => copyNumber('6290805022')}><i class="bi bi-copy"></i></span></a>
+                    </div>
+                </div>
+                <div className={styles.dropdown}>
+                    <button className={styles['dropdown-btn']}>Sikkim</button>
+                    <div className={styles['dropdown-content']}>
+                        <a href="tel:8910171611">8910171611{" "}<span onClick={() => copyNumber('8910171611')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:9830120158">9830120158{" "}<span onClick={() => copyNumber('9830120158')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:9477229182">9477229182{" "}<span onClick={() => copyNumber('9477229182')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:6290805022">6290805022{" "}<span onClick={() => copyNumber('6290805022')}><i class="bi bi-copy"></i></span></a>
+                    </div>
+                </div>
+                <div className={styles.dropdown}>
+                    <button className={styles['dropdown-btn']}>Tripura</button>
+                    <div className={styles['dropdown-content']}>
+                        <a href="tel:8910171611">8910171611{" "}<span onClick={() => copyNumber('8910171611')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:9830120158">9830120158{" "}<span onClick={() => copyNumber('9830120158')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:9477229182">9477229182{" "}<span onClick={() => copyNumber('9477229182')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:6290805022">6290805022{" "}<span onClick={() => copyNumber('6290805022')}><i class="bi bi-copy"></i></span></a>
+                    </div>
+                </div>
+                <div className={styles.dropdown}>
+                    <button className={styles['dropdown-btn']}>Uttarakhand</button>
+                    <div className={styles['dropdown-content']}>
+                        <a href="tel:8910171611">8910171611{" "}<span onClick={() => copyNumber('8910171611')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:9830120158">9830120158{" "}<span onClick={() => copyNumber('9830120158')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:9477229182">9477229182{" "}<span onClick={() => copyNumber('9477229182')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:6290805022">6290805022{" "}<span onClick={() => copyNumber('6290805022')}><i class="bi bi-copy"></i></span></a>
+                    </div>
+                </div>
 
-                    <button>Fraidabad</button>
-                    <div class="dropdown">
-                        <button class="dropdown-btn">Meerut</button>
-                       
-                        <div class="dropdown-content">
-                           
-                            <a href="#">8910171611</a>
-                            <a href="#">9830120158</a>
-                            <a href="#">9477229182</a>
-                            <a href="#">6290805022</a>
-                            <a href="#">9790236772</a>
-                        </div>
+                <div className={styles.dropdown}>
+                    <button className={styles['dropdown-btn']}>Noida </button>
+                    <div className={styles['dropdown-content']}>
+                        <a href="tel:8910171611">8910171611{" "}<span onClick={() => copyNumber('8910171611')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:9830120158">9830120158{" "}<span onClick={() => copyNumber('9830120158')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:9477229182">9477229182{" "}<span onClick={() => copyNumber('9477229182')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:6290805022">6290805022{" "}<span onClick={() => copyNumber('6290805022')}><i class="bi bi-copy"></i></span></a>
                     </div>
-                    <button>Varanasi</button>
-                    <div class="dropdown">
-                        <button class="dropdown-btn">Srinagar</button>
-                       
-                        <div class="dropdown-content">
-                           
-                            <a href="#">8910171611</a>
-                            <a href="#">9830120158</a>
-                            <a href="#">9477229182</a>
-                            <a href="#">6290805022</a>
-                            <a href="#">9790236772</a>
-                        </div>
+                </div>
+                <div className={styles.dropdown}>
+                    <button className={styles['dropdown-btn']}>Siliguri </button>
+                    <div className={styles['dropdown-content']}>
+                        <a href="tel:8910171611">8910171611{" "}<span onClick={() => copyNumber('8910171611')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:9830120158">9830120158{" "}<span onClick={() => copyNumber('9830120158')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:9477229182">9477229182{" "}<span onClick={() => copyNumber('9477229182')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:6290805022">6290805022{" "}<span onClick={() => copyNumber('6290805022')}><i class="bi bi-copy"></i></span></a>
                     </div>
-                    <button>Amritsar</button>
-                    <div class="dropdown">
-                        <button class="dropdown-btn">Howrah</button>
-                       
-                        <div class="dropdown-content">
-                           
-                            <a href="#">8910171611</a>
-                            <a href="#">9830120158</a>
-                            <a href="#">9477229182</a>
-                        </div>
+                </div>
+                <div className={styles.dropdown}>
+                    <button className={styles['dropdown-btn']}>Durgapur </button>
+                    <div className={styles['dropdown-content']}>
+                        <a href="tel:8910171611">8910171611{" "}<span onClick={() => copyNumber('8910171611')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:9830120158">9830120158{" "}<span onClick={() => copyNumber('9830120158')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:9477229182">9477229182{" "}<span onClick={() => copyNumber('9477229182')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:6290805022">6290805022{" "}<span onClick={() => copyNumber('6290805022')}><i class="bi bi-copy"></i></span></a>
                     </div>
-                    <button>Jodhpur</button>
-                    <div class="dropdown">
-                        <button class="dropdown-btn">Raipur</button>
-                       
-                        <div class="dropdown-content">
-                           
-                            <a href="#">8910171611</a>
-                            <a href="#">9830120158</a>
-                            <a href="#">9477229182</a>
-                        </div>
+                </div>
+                <div className={styles.dropdown}>
+                    <button className={styles['dropdown-btn']}>Dehradun </button>
+                    <div className={styles['dropdown-content']}>
+                        <a href="tel:8910171611">8910171611{" "}<span onClick={() => copyNumber('8910171611')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:9830120158">9830120158{" "}<span onClick={() => copyNumber('9830120158')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:9477229182">9477229182{" "}<span onClick={() => copyNumber('9477229182')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:6290805022">6290805022{" "}<span onClick={() => copyNumber('6290805022')}><i class="bi bi-copy"></i></span></a>
                     </div>
-                    <button>Chandigarh</button>
-                    <div class="dropdown">
-                        <button class="dropdown-btn">Guwhati</button>
-                       
-                        <div class="dropdown-content">
-                           
-                            <a href="#">8910171611</a>
-                            <a href="#">9830120158</a>
-                            <a href="#">9477229182</a>
-                            <a href="#">6290805022</a>
-                            <a href="#">9790236772</a>
-                        </div>
+                </div>
+                <div className={styles.dropdown}>
+                    <button className={styles['dropdown-btn']}>Thane </button>
+                    <div className={styles['dropdown-content']}>
+                        <a href="tel:8910171611">8910171611{" "}<span onClick={() => copyNumber('8910171611')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:9830120158">9830120158{" "}<span onClick={() => copyNumber('9830120158')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:9477229182">9477229182{" "}<span onClick={() => copyNumber('9477229182')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:6290805022">6290805022{" "}<span onClick={() => copyNumber('6290805022')}><i class="bi bi-copy"></i></span></a>
                     </div>
-                    <button>Bareily</button>
-                    <div class="dropdown">
-                        <button class="dropdown-btn">Nagpur</button>
-                       
-                        <div class="dropdown-content">
-                           
-                            <a href="#">8910171611</a>
-                            <a href="#">9830120158</a>
-                            <a href="#">9477229182</a>
-                            <a href="#">6290805022</a>
-                            <a href="#">9790236772</a>
-                        </div>
+                </div>
+                <div className={styles.dropdown}>
+                    <button className={styles['dropdown-btn']}>Guntur  </button>
+                    <div className={styles['dropdown-content']}>
+                        <a href="tel:8910171611">8910171611{" "}<span onClick={() => copyNumber('8910171611')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:9830120158">9830120158{" "}<span onClick={() => copyNumber('9830120158')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:9477229182">9477229182{" "}<span onClick={() => copyNumber('9477229182')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:6290805022">6290805022{" "}<span onClick={() => copyNumber('6290805022')}><i class="bi bi-copy"></i></span></a>
                     </div>
-                    <button>Vdodara</button>
-                    <div class="dropdown">
-                        <button class="dropdown-btn">Mathura</button>
-                       
-                        <div class="dropdown-content">
-                           
-                            <a href="#">8910171611</a>
-                            <a href="#">9830120158</a>
-                            <a href="#">9477229182</a>
-                            <a href="#">6290805022</a>
-                            <a href="#">9790236772</a>
-                            <a href="#">8910171611</a>
-                            <a href="#">9830120158</a>
-                            <a href="#">9477229182</a>
-                        </div>
+                </div>
+                <div className={styles.dropdown}>
+                    <button className={styles['dropdown-btn']}>Jalandhar  </button>
+                    <div className={styles['dropdown-content']}>
+                        <a href="tel:8910171611">8910171611{" "}<span onClick={() => copyNumber('8910171611')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:9830120158">9830120158{" "}<span onClick={() => copyNumber('9830120158')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:9477229182">9477229182{" "}<span onClick={() => copyNumber('9477229182')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:6290805022">6290805022{" "}<span onClick={() => copyNumber('6290805022')}><i class="bi bi-copy"></i></span></a>
                     </div>
-                    <button>Rajkot</button>
-                    <button>Ludhiana</button>
-                    <div class="dropdown">
-                        <button class="dropdown-btn">Nashik</button>
-                       
-                        <div class="dropdown-content">
-                           
-                            <a href="#">8910171611</a>
-                            <a href="#">9830120158</a>
-                            <a href="#">9477229182</a>
-                            <a href="#">6290805022</a>
-                            <a href="#">9790236772</a>
-                            <a href="#">9705319022</a>
-                        </div>
+                </div>
+                <div className={styles.dropdown}>
+                    <button className={styles['dropdown-btn']}>Thane </button>
+                    <div className={styles['dropdown-content']}>
+                        <a href="tel:8910171611">8910171611{" "}<span onClick={() => copyNumber('8910171611')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:9830120158">9830120158{" "}<span onClick={() => copyNumber('9830120158')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:9477229182">9477229182{" "}<span onClick={() => copyNumber('9477229182')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:6290805022">6290805022{" "}<span onClick={() => copyNumber('6290805022')}><i class="bi bi-copy"></i></span></a>
                     </div>
-                    <button>Aligarh</button>
-                    <div class="dropdown">
-                        <button class="dropdown-btn">Moradabad</button>
-                       
-                        <div class="dropdown-content">
-                           
-                            <a href="#">8910171611</a>
-                            <a href="#">9830120158</a>
-                            <a href="#">9477229182</a>
-                            <a href="#">6290805022</a>
-                            <a href="#">9790236772</a>
-                            <a href="#">9705319022</a>
-                        </div>
+                </div>
+                <div className={styles.dropdown}>
+                    <button className={styles['dropdown-btn']}>Rourkela  </button>
+                    <div className={styles['dropdown-content']}>
+                        <a href="tel:8910171611">8910171611{" "}<span onClick={() => copyNumber('8910171611')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:9830120158">9830120158{" "}<span onClick={() => copyNumber('9830120158')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:9477229182">9477229182{" "}<span onClick={() => copyNumber('9477229182')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:6290805022">6290805022{" "}<span onClick={() => copyNumber('6290805022')}><i class="bi bi-copy"></i></span></a>
                     </div>
-                    <div class="dropdown">
-                        <button class="dropdown-btn">Ajmer</button>
-                       
-                        <div class="dropdown-content">
-                           
-                            <a href="#">8910171611</a>
-                            <a href="#">9830120158</a>
-                            <a href="#">9477229182</a>
-                            <a href="#">6290805022</a>
-                            <a href="#">9790236772</a>
-                        </div>
+                </div>
+                <div className={styles.dropdown}>
+                    <button className={styles['dropdown-btn']}>Tirupati  </button>
+                    <div className={styles['dropdown-content']}>
+                        <a href="tel:8910171611">8910171611{" "}<span onClick={() => copyNumber('8910171611')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:9830120158">9830120158{" "}<span onClick={() => copyNumber('9830120158')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:9477229182">9477229182{" "}<span onClick={() => copyNumber('9477229182')}><i class="bi bi-copy"></i></span></a>
+                        <a href="tel:6290805022">6290805022{" "}<span onClick={() => copyNumber('6290805022')}><i class="bi bi-copy"></i></span></a>
                     </div>
-                    <button>Jamnagar</button>
-                    <div class="dropdown">
-                        <button class="dropdown-btn">Jhasi</button>
-                       
-                        <div class="dropdown-content">
-                           
-                            <a href="#">8910171611</a>
-                            <a href="#">9830120158</a>
+                </div>
 
-                        </div>
-                    </div>
-                    <div class="dropdown">
-                        <button class="dropdown-btn">Tirupati</button>
-                       
-                        <div class="dropdown-content">
-                           
-                            <a href="#">8910171611</a>
-                            <a href="#">9830120158</a>
-                            <a href="#">9477229182</a>
-                            <a href="#">6290805022</a>
-                            <a href="#">9790236772</a>
-                        </div>
-                    </div>
-                    </div>
-            </div-container>
+            </div>
+
+
         </>
-    )
+    );
 }
-

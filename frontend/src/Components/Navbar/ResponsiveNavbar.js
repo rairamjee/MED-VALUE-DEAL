@@ -27,7 +27,10 @@ function ResponsiveNavbar(props) {
           <Link className="nav-link" to="/Medicine">Medicine</Link>
           <Link className="nav-link" to="/LabTest">LabTest</Link>
           <Link className="nav-link" to="/HealthCare">HealthCare</Link>
-          <Link className="nav-link" to="/Surgeries">MedRush</Link>
+          <div className="med-rush-container">
+            <Link className="nav-link med-rush-link" to="/MedRush">MedRush</Link>
+            <span className="new-feature-tag">New Feature</span>
+        </div>
         </Nav>
         <Form className="d-flex features">
           <FormControl

@@ -6,6 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Singup from './Components/Signup/Signup';
 import Login from './Components/Login/Login';
+import Surgeries from './Components/Surgeries/Surgeries'
 import { auth } from './firebase';
 import React, { useEffect, useState } from 'react';
 
@@ -30,7 +31,7 @@ function App() {
           <Route path="/Signup" element={<Singup />} />
           <Route path="/Login" element={<Login />} />
           <Route path="/Medicine" element={<Medicine />} />
-          {/* <Route path="/Surgeries" element={<Surgeries />} /> */}
+          <Route path="/MedRush" element={<Surgeries />} />
         </Routes>
       );
     } else {
