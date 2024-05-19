@@ -1,0 +1,58 @@
+/* Add your styles here */
+
+#looking, #offer, #offer2, #offer3, #banner, #concern, #article, #pop-brands, #last {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .looking-h3, .offerH, .offerH2, .con-1, #cat div, #article h3, #pop-brands h2 {
+    margin-bottom: 20px;
+  }
+  
+  .looking-img, #offer2, #offer3, .con-2, #art-image {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .looking-img div, #offer2 a, #offer3 img, .con-2 div, #art-image a {
+    margin: 5px;
+  }
+  
+  .looking-img img, #offer img, #offer2 img, #offer3 img, .con-2 img, #cat img, #banner img, #article img, #last img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
+  
+  .slide-container, .wrapper {
+    position: relative;
+  }
+  
+  .carousel {
+    display: flex;
+    overflow: hidden;
+  }
+  
+  .carousel img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  #left, #right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  
+  #left {
+    left: 0;
+  }
+  
+  #right {
+    right: 0;
+  }
+  
