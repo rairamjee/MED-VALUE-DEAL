@@ -20,6 +20,8 @@
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 20px;
+    height:auto;
+    width: auto;
 }
 h4{
     color: rgb(94, 99, 99);
@@ -74,3 +76,36 @@ h1{
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
+.first-aid-section {
+    margin-top: 100px;
+    padding: 20px;
+    background-color: rgb(198, 226, 225);
+    border-radius: 20px;
+    text-align: left;
+    max-width: 100%;
+    margin: 50px auto;
+    box-sizing: border-box; 
+}
+  
+  .first-aid-section h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  .first-aid-section ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .first-aid-section li {
+    margin-bottom: 10px;
+  }
+  
+  .first-aid-section li::before {
+    content: '•';
+    color: #030303;
+    font-weight: bold;
+    display: inline-block;
+    width: 20px;
+  }

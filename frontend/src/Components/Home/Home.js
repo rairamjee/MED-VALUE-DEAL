@@ -43,9 +43,9 @@ const HomePage = () => {
       </div>
       <div className="offerH"><h1><b>Offers Just for You</b></h1></div>
       <div id="offer2">
-        <a href=""><img src="https://medvalue5.web.app/images/offer/1.jpg" alt="" /></a>
-        <a href=""><img src="https://medvalue5.web.app/images/offer/2.jpg" alt="" /></a>
-        <a href="./signup.html"><img src="https://medvalue5.web.app/images/offer/3.jpg" alt="" /></a>
+        <a href="1"><img src="https://medvalue5.web.app/images/offer/1.jpg" alt="" /></a>
+        <a href="2"><img src="https://medvalue5.web.app/images/offer/2.jpg" alt="" /></a>
+        <a href="3"><img src="https://medvalue5.web.app/images/offer/3.jpg" alt="" /></a>
       </div>
       <div className="offerH2"><h1><b>Payment Offers</b></h1></div>
       <div id="offer3">
@@ -108,7 +108,7 @@ const HomePage = () => {
       {/* <Carousel/> */}
       
       <div className="banner-4">
-        <a href="#"><img src=' https://medvalue5.web.app/images/offer/banner.jpg'></img></a>
+        <a href="3"><img src=' https://medvalue5.web.app/images/offer/banner.jpg'  alt=""></img></a>
       </div>
 
       <div id="concern">
@@ -160,7 +160,7 @@ const HomePage = () => {
         </div>
         <div className="health-2">
 
-          <a href="#"><div><img src="https://blog-images-1.pharmeasy.in/blog/production/wp-content/uploads/2022/10/06125332/12-5.jpg?dim=1440x0" alt=""></img>
+          <a href="4"><div><img src="https://blog-images-1.pharmeasy.in/blog/production/wp-content/uploads/2022/10/06125332/12-5.jpg?dim=1440x0" alt=""></img>
             <p>Benefits of Bakasana ( Crane Pose) and How to Do it By Dr. Ankit Sankhe</p>
           </div></a>
           {/* 
@@ -168,25 +168,25 @@ const HomePage = () => {
               <p>Benefits of Bakasana ( Crane Pose) and How to Do it By Dr. Ankit Sankhe</p>
             </div></a> */}
 
-          <a href=""><div><img src="https://blog-images-1.pharmeasy.in/blog/production/wp-content/uploads/2022/10/06125500/9-3.jpg?dim=1440x0" alt=""></img>
+          <a href="5"><div><img src="https://blog-images-1.pharmeasy.in/blog/production/wp-content/uploads/2022/10/06125500/9-3.jpg?dim=1440x0" alt=""></img>
             <p>Benefits of Bakasana ( Crane Pose) and How to Do it By Dr. Ankit Sankhe</p>
           </div></a>
 
-          <a href=""><div><img src="https://blog-images-1.pharmeasy.in/blog/production/wp-content/uploads/2022/10/06125758/19.jpg?dim=1440x0" alt=""></img>
+          <a href="6"><div><img src="https://blog-images-1.pharmeasy.in/blog/production/wp-content/uploads/2022/10/06125758/19.jpg?dim=1440x0" alt=""></img>
             <p>Benefits of Bakasana ( Crane Pose) and How to Do it By Dr. Ankit Sankhe</p></div></a>
 
-          <a href=""><div><img src="https://blog-images-1.pharmeasy.in/blog/production/wp-content/uploads/2022/10/06125931/4-6.jpg?dim=1440x0" alt=""></img>
+          <a href="6"><div><img src="https://blog-images-1.pharmeasy.in/blog/production/wp-content/uploads/2022/10/06125931/4-6.jpg?dim=1440x0" alt=""></img>
             <p>Benefits of Bakasana ( Crane Pose) and How to Do it By Dr. Ankit Sankhe</p>
           </div></a>
         </div>
       </div>
 
       <div className="banner-2">
-        <a href="#"><img src='https://medvalue5.web.app/images/offer/b2.jpg'></img></a>
+        <a href="7"><img src='https://medvalue5.web.app/images/offer/b2.jpg' alt=""></img></a>
       </div>
 
       <div className="banner-3">
-        <a href="#"><img src='https://medvalue5.web.app/images/offer/b3.jpg'></img></a>
+        <a href="8"><img src='https://medvalue5.web.app/images/offer/b3.jpg'  alt=""></img></a>
       </div>
      
 
