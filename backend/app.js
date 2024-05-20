@@ -1,8 +1,10 @@
 const express = require('express');
 const app=express();
 const medicine_details = require('./routes/Medicine');
+const cors = require('cors');
 const ConnectDB = require('./db/connect')
 require('dotenv').config()
+
 
 const PORT = 5000
 
@@ -12,7 +14,15 @@ app.get('/',(req,res)=>{
     res.status(200).json('Jai Siya Ram')
 })
 
+app.use(cors({
+    origin: 'http://localhost:3000'
+}));
+
 app.use('/api/v1/medicine',medicine_details)
+
+// app.get('/api/v1/medicine/all', (req, res) => {
+//     res.json(medicines); // Assuming medicines is your array of medicine objects
+// })
 
 
 const start = async()=>{
