@@ -48,7 +48,11 @@ export default function Signup() {
   };
   return (
     <div className={styles.container}>
+        <button className={styles.backButton}>   <span>
+          <Link to="/">Back{" "}<i class="bi bi-arrow-return-left"></i></Link>
+        </span></button>
       <div className={styles.innerBox}>
+    
         <h1 className={styles.heading}>SignUp<img src="./favicon1.ico" alt="MedvalueDeal Logo" style={{ width: '150px', height: '70px', marginRight: '10px' }} /> </h1>
         <InputControl label="Name" placeholder="Enter your name " onChange={event =>
           setValues((prev) => ({ ...prev, name: event.target.value }))} />

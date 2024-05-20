@@ -17,7 +17,7 @@ function ResponsiveNavbar(props) {
     }
   return (
     <Navbar collapseOnSelect expand="lg" style={{backgroundColor:'#91d7d3'}}  className='p-3'>
-      <Link className="nav-link" to="/Home">
+      <Link className="nav-link" to="/">
       <img src="./favicon1.ico" alt="MedvalueDeal Logo" style={{ width: '61px', height: '30px', marginRight: '10px' }} />
       </Link>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -46,7 +46,7 @@ function ResponsiveNavbar(props) {
         </div>
         <Nav className="me-auto features">
       
-          <Link className="nav-link" to="/More">More</Link>
+          {/* <Link className="nav-link" to="/More">More</Link> */}
           <Link className="nav-link" to="/Favourite">Favourite</Link>
           <Link className="nav-link" to="/Cart">Cart</Link>
           

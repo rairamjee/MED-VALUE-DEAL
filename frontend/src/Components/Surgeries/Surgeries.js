@@ -10,9 +10,9 @@ export default function Surgeries() {
     }
     return (
         <>
-       
+
             <div style={{ textAlign: 'center' }}>
-                <br/>
+                <br />
                 <h4>Immediate help at your fingertips. Click on the numbers below to call an ambulance in an emergency<i class="bi bi-bandaid-fill"></i></h4>
 
                 <h1 >Find Your City<i class="bi bi-search"></i></h1>
@@ -416,6 +416,24 @@ export default function Surgeries() {
                     </div>
                 </div>
 
+                <div className={styles['first-aid-section']}>
+                    <h2>First Aid Tips {"  "}<i class="bi bi-bandaid-fill"></i></h2>
+                    <ul>
+                        <li><strong>Heat Exhaustion:</strong> Move the person to a cooler place and have them lie down. Give small sips of water if they are conscious. Apply cool, wet cloths to their skin and fan them until they recover or help arrives.</li>
+                        <li><strong>Poisoning:</strong> Identify the poison if possible and call emergency services. Do not induce vomiting unless instructed by a medical professional. Keep the person calm and monitor their condition.</li>
+                        <li><strong>Choking:</strong> If someone is choking, perform the Heimlich maneuver. Stand behind the person, place your hands around their abdomen, and give quick, upward thrusts until the object is expelled.</li>
+                        <li><strong>Burn Care:</strong> For minor burns, cool the area under running water for at least 10 minutes. Cover with a sterile, non-adhesive bandage. For severe burns, seek medical help immediately.</li>
+                        <li><strong>CPR (Cardiopulmonary Resuscitation):</strong> If someone is unresponsive and not breathing, begin CPR. Push hard and fast in the center of the chest at a rate of 100-120 compressions per minute, and give rescue breaths if trained to do so.</li>
+                        <li><strong>Severe Bleeding:</strong> Apply direct pressure to the wound with a clean cloth or bandage. Elevate the injured area if possible and maintain pressure until help arrives.</li>
+                        <li><strong>Seizures:</strong> Protect the person from injury by removing nearby objects. Do not restrain them. Once the seizure stops, place them on their side to keep their airway clear and stay with them until they recover.</li>
+                        <li><strong>Fractures:</strong> If you suspect a broken bone, immobilize the area using a splint or improvised materials. Support the injured limb and seek medical help as soon as possible.</li>
+                        <li><strong>Anaphylaxis (Severe Allergic Reaction):</strong> Administer an epinephrine auto-injector if available and call emergency services. Assist the person in using their prescribed medication and monitor their breathing and consciousness.</li>
+                        <li><strong>Shock:</strong> Lay the person down and elevate their legs slightly unless it causes pain or injury. Keep them warm and comfortable, and monitor their vital signs while waiting for help to arrive.</li>
+                        <li><strong>Asthma Attack:</strong> Help the person sit upright and assist them in using their prescribed inhaler. If symptoms worsen or they have difficulty breathing, seek emergency medical attention.</li>
+                        <li><strong>Stroke:</strong> Recognize the signs of a stroke (face drooping, arm weakness, speech difficulty), and call emergency services immediately. Keep the person calm and reassure them while waiting for help.</li>
+                        <li><strong>Heart Attack:</strong> Call emergency services and help the person sit or lie down in a comfortable position. If they are conscious and not allergic, assist them in taking aspirin to help thin the blood.</li>
+                    </ul>
+                </div>
             </div>
 
 
