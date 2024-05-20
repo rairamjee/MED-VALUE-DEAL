@@ -46,7 +46,7 @@ function ResponsiveNavbar(props) {
         </div>
         <Nav className="me-auto features">
       
-          <Link className="nav-link" to="/More">More</Link>
+          {/* <Link className="nav-link" to="/More">More</Link> */}
           <Link className="nav-link" to="/Favourite">Favourite</Link>
           <Link className="nav-link" to="/Cart">Cart</Link>
           
