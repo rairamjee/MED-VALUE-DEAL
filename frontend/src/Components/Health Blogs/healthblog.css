@@ -1,4 +1,8 @@
 /* HealthBlog.css */
+
+/* *{
+  font-family: 'Courier New', Courier, monospace;
+} */
 .carousel-item {
     height: 90vh;
     min-height: 300px;
@@ -10,10 +14,10 @@
     color: black;
   }
   
-  .container2 {
-    width: 100%;
+  .contentsofblog {
     margin-top: 35rem; /* Adjusted to prevent overlap */
     padding: 20px;
+    margin-left: 8.5rem;
   }
   
   .image {
@@ -26,7 +30,86 @@
     display: block;
   }
   
-  .container2 h2 {
+  .first{
+    margin-top: 2rem;
+  }
+  .first h5{
+    font-size: 16px;
+    margin-top: 0.5em;
+    color:rgb(0, 119, 119);
+  }
+
+  .first h3{
+    color:rgb(71, 70, 70);
+    font-size: 18px;
+    margin-bottom: 1rem;
+  }
+
+  .first p span{
+    color:rgb(0, 119, 119);
+  }
+
+  .second-1 h5{
+    font-size: 16px;
+    margin-top: 0.5em;
+    color:rgb(0, 119, 119);
+  }
+
+  .second-1 h3{
+    color:rgb(71, 70, 70);
+    font-size: 18px;
+    margin-bottom: 1rem;
+  }
+
+  .second-1 p span{
+    color:rgb(0, 119, 119);
+  }
+
+  .blog-image{
+    width:40rem;
+  }
+
+  .blog-2-img{
+    width: 20rem;
+  }
+
+  .third-img{
+    width: 20rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .fourth{
+    margin-top: 2rem;
+  }
+  .fourth h5{
+    font-size: 16px;
+    margin-top: 0.5em;
+    color:rgb(0, 119, 119);
+  }
+
+  .fourth h3{
+    color:rgb(71, 70, 70);
+    font-size: 18px;
+    margin-bottom: 1rem;
+  }
+
+  .fourth p span{
+    color:rgb(0, 119, 119);
+  }
+
+  .blog-image-content{
+    width:30rem;
+  }
+
+  .fourth-content{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:2rem;
+  }
+
+  /* .container2 h2 {
     text-align: center;
   }
   
@@ -45,6 +128,3 @@
   
   .imp {
     margin-bottom: 50px; /* Ensure space at the bottom */
-  }
-  
-  
