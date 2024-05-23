@@ -20,7 +20,7 @@ app.use(cors({
 }));
 
 app.use('/api/v1/medicine',medicine_details)
-app.use('/api/v1/labtest',medicine_details)
+app.use('/api/v1/labtest',labtest_details)
 
 // app.get('/api/v1/medicine/all', (req, res) => {
 //     res.json(medicines); // Assuming medicines is your array of medicine objects

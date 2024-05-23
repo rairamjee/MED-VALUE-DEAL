@@ -7,12 +7,12 @@ const LabTestSchema = new mongoose.Schema({
     trim:true,
   },
   Available_at: {
-    type:String,
+    type:Number,
     required:[true,'required'],
     trim:true,
   },
   Test_Count: {
-    type:String,
+    type:Number,
     required:[true,'required'],
     trim:true,
   }, // If this is meant to be a numeric value, consider changing this to Number
