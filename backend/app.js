@@ -1,6 +1,7 @@
 const express = require('express');
 const app=express();
 const medicine_details = require('./routes/Medicine');
+const labtest_details = require('./routes/LabTest');
 const cors = require('cors');
 const ConnectDB = require('./db/connect')
 require('dotenv').config()
@@ -19,6 +20,7 @@ app.use(cors({
 }));
 
 app.use('/api/v1/medicine',medicine_details)
+app.use('/api/v1/labtest',labtest_details)
 
 // app.get('/api/v1/medicine/all', (req, res) => {
 //     res.json(medicines); // Assuming medicines is your array of medicine objects
