@@ -8,12 +8,13 @@ require('dotenv').config()
 
 
 const PORT = 5000
-
+app.use(express.static('./public'))
 app.use(express.json())
 
 app.get('/',(req,res)=>{
-    res.status(200).json('Jai Siya Ram')
+    res.sendFile(__dirname + '/public/index.html');
 })
+
 
 app.use(cors({
     origin: 'http://localhost:3000'
