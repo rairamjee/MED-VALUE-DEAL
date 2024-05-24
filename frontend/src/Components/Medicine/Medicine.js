@@ -34,18 +34,18 @@ function Medicine() {
         <Container style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', marginTop: '5rem' }}>
             <Container style={{ display: 'flex', flexDirection: 'column', flexBasis: '45%' }}>
                 {medicines.map((medicine, index) => (
-                    <Card key={index} style={{ width: '30rem', display: 'flex', justifyContent: 'center', flexDirection: 'row', padding: '1rem', boxShadow: '2px 2px 10px Grey' }} className="mt-3 mb-3" >
+                    <Card key={index} style={{ width: '30rem', display: 'flex', justifyContent: 'center', flexDirection: 'row', padding: '1rem', boxShadow: '2px 2px 10px rgb(0, 119, 119)' }} className="mt-3 mb-3" >
                         <CardImg variant="top" style={{ width: '3rem', height: '3rem' }} src={medicine.Medicine_image} alt={medicine.Medicine_name} />
                         <CardBody>
-                            <CardTitle style={{ fontSize: '22px' }} className="mb-2">{medicine.Medicine_name}</CardTitle>
-                            <CardSubtitle style={{ fontWeight: '400' }} className="mb-3 mt-3">{medicine.Company_name}</CardSubtitle>
-                            <CardSubtitle style={{ fontSize: '18px' }} className="mb-3 mt-3">{medicine.Quantity}</CardSubtitle>
-                            <CardBody style={{ display: 'flex', justifyContent: 'space-between', padding: '0' }}>
+                            <CardTitle style={{ fontSize: '22px' , color: "rgb(0, 119, 119)"}} className="mb-2">{medicine.Medicine_name}</CardTitle>
+                            <CardSubtitle style={{ fontWeight: '400' ,color: "grey",fontSize:"18px"}} className="mb-2 mt-3">{medicine.Company_name}</CardSubtitle>
+                            <CardSubtitle style={{ fontSize: '15px' ,color: "grey" }} className="mb-5 ">{medicine.Quantity}</CardSubtitle>
+                            <CardBody style={{ display: 'flex', justifyContent: 'space-between', padding: '0' ,}}>
                                 <CardText style={{ fontSize: '21px' }}>
-                                    Rs {medicine.Price}
+                                    Rs <span style={{color: "rgb(0, 119, 119)"}}>{medicine.Price}</span>
                                 </CardText>
-                                <Button style={{ backgroundColor: '#008B8B' }}>
-                                    <Link to="/Login" style={{ backgroundColor: '#008B8B', color: "white" }}>Add to Cart</Link>
+                                <Button style={{ backgroundColor: '#008B8B' }} className="button-cart">
+                                    <Link to="/Login" style={{ backgroundColor: '#008B8B', color: "white" ,textDecoration:'None'}}>Add to Cart {">"}</Link>
                                 </Button>
                             </CardBody>
                         </CardBody>
