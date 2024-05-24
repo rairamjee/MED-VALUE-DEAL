@@ -11,6 +11,7 @@ import HomePage from './Components/Home/Home';
 import { auth } from './firebase';
 import React, { useEffect, useState } from 'react';
 import HealthBlog from './Components/Health Blogs/healthblog';
+import LabTest from './Components/LabTest/LabTest';
 
 function App() {
   const [username, setUserName] = useState("");
@@ -41,7 +42,7 @@ function App() {
           <Route path="/Signup" element={<Signup />} />
           <Route path="/Login" element={<Login />} />
           <Route path="/HealthCare" element={<HealthBlog />} />
-
+          <Route path="/LabTest" element={<LabTest />} />
         </Routes>
       );
     }
