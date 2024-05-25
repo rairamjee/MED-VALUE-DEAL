@@ -48,7 +48,11 @@
   background-color: rgba(60, 59, 59, 0.3); 
   animation: pulse 2s infinite; 
 }
-
+.dropdown-menu[data-bs-popper] {
+  top: 97%;
+  left: -36px;
+  margin-top: var(--bs-dropdown-spacer);
+}
 
 
 @keyframes pulse {

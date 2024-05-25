@@ -49,7 +49,7 @@ export default function Signup() {
   return (
     <div className={styles.container}>
         <button className={styles.backButton}>   <span>
-          <Link to="/">Back{" "}<i class="bi bi-arrow-return-left"></i></Link>
+          <Link to="/">Home{" "}<i class="bi bi-arrow-return-left"></i></Link>
         </span></button>
       <div className={styles.innerBox}>
     
