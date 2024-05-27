@@ -1,14 +1,14 @@
 import React, { useEffect, useState, useContext } from "react";
-import { Card, CardImg, Container, CardBody, CardText, CardTitle, Button, CardSubtitle } from "react-bootstrap";
+import { Card, CardImg, Container, CardBody, CardText, CardTitle, Button, CardSubtitle, Modal } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { CartContext } from "../CartPage/CartContext";
 import "./Medicine.css";
-
 
 function Medicine() {
     const [medicines, setMedicines] = useState([]);
     const [error, setError] = useState(null);
     const { addToCart } = useContext(CartContext);
+    const [showSuccessModal, setShowSuccessModal] = useState(false);
 
     useEffect(() => {
         const fetchMedicines = async () => {
@@ -29,6 +29,14 @@ function Medicine() {
         fetchMedicines();
     }, []);
 
+    const handleAddToCart = (medicine) => {
+        addToCart(medicine);
+        setShowSuccessModal(true);
+        setTimeout(() => {
+            setShowSuccessModal(false);
+        }, 3000);
+    };
+
     if (error) {
         return <div>Error fetching the medicines: {error}</div>;
     }
@@ -47,7 +55,7 @@ function Medicine() {
                                 <CardText style={{ fontSize: '21px' }}>
                                     Rs <span style={{ color: "rgb(0, 119, 119)" }}>{medicine.Price}</span>
                                 </CardText>
-                                <Button style={{ backgroundColor: '#008B8B' }} className="button-cart" onClick={() => addToCart(medicine)}>
+                                <Button style={{ backgroundColor: '#008B8B' }} className="button-cart" onClick={() => handleAddToCart(medicine)}>
                                     Add to Cart {">"}
                                 </Button>
                             </CardBody>
@@ -57,9 +65,9 @@ function Medicine() {
             </Container>
             <Card style={{ border: 'none', flexBasis: '40%' }} className="Prescription-Details">
                 <CardTitle>Please add item(s) to proceed</CardTitle>
-                <Button style={{ marginTop: '1rem', backgroundColor: '#008B8B', width: '50%' }}>
-                    <Link to="/cart" style={{ color: "white", textDecoration: 'none' }}>View Cart {'>>'}</Link>
-                </Button>
+                <Link to='/cart'>
+                    <Button style={{ marginTop: '1rem', backgroundColor: '#008B8B', width: '50%' }}>View Cart {'>>'} </Button>
+                </Link>
                 <Card style={{ border: 'none', width: '22rem', boxShadow: '2px 2px 10px Grey', marginTop: '3rem' }}>
                     <Card style={{ border: 'none', display: 'flex', flexDirection: 'row', margin: '0.5rem 0 0 1rem' }}>
                         <CardImg src="https://res.cloudinary.com/hwfihgbjm/image/upload/v1619815694/production/fx4xpyy4bdvdzrhve8ss.png" style={{ width: "40px", height: '40px', marginRight: '1rem' }} alt="Valid prescription" />
@@ -85,8 +93,15 @@ function Medicine() {
                     </Card>
                 </Card>
             </Card>
+            <Modal show={showSuccessModal} onHide={() => setShowSuccessModal(false)}>
+                <Modal.Header closeButton>
+                    <Modal.Title>Success!</Modal.Title>
+                </Modal.Header>
+                <Modal.Body>
+                    <p>Item added to cart successfully.</p>
+                </Modal.Body>
+            </Modal>
         </Container>
     );
 }
-
 export default Medicine;
