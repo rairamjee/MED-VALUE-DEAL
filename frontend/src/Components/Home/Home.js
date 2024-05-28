@@ -2,6 +2,8 @@ import React from 'react';
 import './Home.css';
 import './responsive.css';
 import InfoSection from './InfoSection';
+import Slider1 from '../Carousel/Slider1';
+import Slider2 from '../Carousel/Slider2';
 const HomePage = () => {
   return (
     <div>
@@ -54,7 +56,7 @@ const HomePage = () => {
         <img src="https://cdn01.pharmeasy.in/dam/banner/banner/9466405c308-au.jpg?dim=1440x0" alt="" />
       </div>
 
-      <div className="top">
+      {/* <div className="top">
         <div className="container">
           <div className="slide-container">
             <div className="slide-img">
@@ -83,8 +85,9 @@ const HomePage = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
+      <Slider1/>
       <div id="cat">
         <div><h2><b>Shop By Categories</b></h2></div>
       </div>
@@ -106,7 +109,7 @@ const HomePage = () => {
       </div> */}
 
       {/* <Carousel/> */}
-      
+      <Slider2/>
       <div className="banner-4">
         <a href="3"><img src=' https://medvalue5.web.app/images/offer/banner.jpg'  alt=""></img></a>
       </div>
