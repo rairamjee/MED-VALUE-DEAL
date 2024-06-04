@@ -77,7 +77,7 @@ function LabTest() {
                                     Rs <span style={{color: "rgb(0, 119, 119)"}}>{labtests.Price}</span> Onwards
                                 </CardText>
                                 <Button style={{ backgroundColor: '#008B8B' }} className="button-cart" onClick={handleShow}>
-                                    Book Now {">"}
+                                    Book Now <i class="bi bi-bag-check"></i>
                                 </Button>
                             </CardBody>
                         </CardBody>
@@ -87,7 +87,7 @@ function LabTest() {
             <Card style={{ border: 'none', flexBasis: '40%' }} className="Prescription-Details">
                 <CardTitle>Please add item(s) to proceed</CardTitle>
                 <Link to='/cart'>
-                    <Button style={{ marginTop: '1rem', backgroundColor: '#008B8B', width: '50%' }}>View Cart {'>>'} </Button>
+                    <Button style={{ marginTop: '1rem', backgroundColor: '#008B8B', width: '50%' }}>View Cart <i class="bi bi-cart4"></i> </Button>
                 </Link>
                 <Card style={{ border: 'none', width: '22rem', boxShadow: '2px 2px 10px Grey', marginTop: '3rem' }}>
                     <Card style={{ border: 'none', display: 'flex', flexDirection: 'row', margin: '0.5rem 0 0 1rem' }}>
@@ -145,7 +145,7 @@ function LabTest() {
             {/* Payment Success Modal */}
             <Modal show={showPaymentSuccess} onHide={handlePaymentSuccessClose}>
                 <Modal.Header closeButton>
-                    <Modal.Title>Payment Successful</Modal.Title>
+                    <Modal.Title>Payment Successful <i class="bi bi-check2-circle" style={{color:"green"}}></i></Modal.Title>
                 </Modal.Header>
                 <Modal.Body>Your payment has been successfully completed.</Modal.Body>
                 <Modal.Footer>
@@ -156,7 +156,7 @@ function LabTest() {
             {/* Cash on Delivery Success Modal */}
             <Modal show={showCashOnDeliverySuccess} onHide={() => setShowCashOnDeliverySuccess(false)}>
                 <Modal.Header closeButton>
-                    <Modal.Title>Cash on Delivery</Modal.Title>
+                    <Modal.Title>Cash on Delivery <i class="bi bi-check2-circle" style={{color:"green"}}></i></Modal.Title>
                 </Modal.Header>
                 <Modal.Body>Thank you! Your order has been successfully placed.</Modal.Body>
                 <Modal.Footer>

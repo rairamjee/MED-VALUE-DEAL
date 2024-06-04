@@ -2,8 +2,9 @@ import React from 'react';
 import './Home.css';
 import './responsive.css';
 import InfoSection from './InfoSection';
-import Slider1 from '../Carousel/Slider1';
-import Slider2 from '../Carousel/Slider2';
+import { Link } from 'react-router-dom';
+// import Slider1 from '../Carousel/Slider1';
+// import Slider2 from '../Carousel/Slider2';
 const HomePage = () => {
   return (
     <div>
@@ -13,28 +14,43 @@ const HomePage = () => {
         </div>
         <div className="looking-img">
           <div>
-            <a href="./productpage.html"><img src="https://medvalue5.web.app/images/looking/1.jpg" alt="" /></a>
+            <Link to="/Medicine">
+              <img src="https://medvalue5.web.app/images/looking/1.jpg" alt="" />
+            </Link>
           </div>
           <div>
-            <a href="./productpage.html"><img src="https://medvalue5.web.app/images/looking/2.jpg" alt="" /></a>
+            <Link to="/LabTest">
+              <img src="https://medvalue5.web.app/images/looking/2.jpg" alt="" />
+            </Link>
           </div>
           <div>
-            <a href="./productpage.html"><img src="https://medvalue5.web.app/images/looking/3.jpg" alt="" /></a>
+            <Link to="/HealthCare">
+              <img src="https://medvalue5.web.app/images/looking/3.jpg" alt="" />
+            </Link>
           </div>
           <div>
-            <a href="./productpage.html"><img src="https://medvalue5.web.app/images/looking/4.jpg" alt="" /></a>
+            <Link to="/MedRush">
+              <img src="https://medvalue5.web.app/images/looking/4.jpg" alt="" />
+            </Link>
           </div>
           <div>
-            <a href="./productpage.html"><img src="https://medvalue5.web.app/images/looking/5.jpg" alt="" /></a>
+            <Link to="/HealthCare">
+              <img src="https://medvalue5.web.app/images/looking/5.jpg" alt="" />
+            </Link>          </div>
+          <div>
+            <Link to="/Cart">
+              <img src="https://medvalue5.web.app/images/looking/6.jpg" alt="" />
+            </Link>
           </div>
           <div>
-            <a href="./productpage.html"><img src="https://medvalue5.web.app/images/looking/6.jpg" alt="" /></a>
+            <Link to="/Cart">
+              <img src="https://medvalue5.web.app/images/looking/7.jpg" alt="" />
+            </Link>
           </div>
           <div>
-            <a href="./productpage.html"><img src="https://medvalue5.web.app/images/looking/7.jpg" alt="" /></a>
-          </div>
-          <div>
-            <a href="./productpage.html"><img src="https://medvalue5.web.app/images/looking/8.jpg" alt="" /></a>
+            <Link to='/Cart'>
+              <img src="https://medvalue5.web.app/images/looking/8.jpg" alt="" />
+            </Link>
           </div>
         </div>
       </div>
@@ -47,7 +63,9 @@ const HomePage = () => {
       <div id="offer2">
         <a href="1"><img src="https://medvalue5.web.app/images/offer/1.jpg" alt="" /></a>
         <a href="2"><img src="https://medvalue5.web.app/images/offer/2.jpg" alt="" /></a>
-        <a href="3"><img src="https://medvalue5.web.app/images/offer/3.jpg" alt="" /></a>
+        <Link to="/Login">
+          <img src="https://medvalue5.web.app/images/offer/3.jpg" alt="" />
+        </Link>
       </div>
       <div className="offerH2"><h1><b>Payment Offers</b></h1></div>
       <div id="offer3">
@@ -87,10 +105,10 @@ const HomePage = () => {
         </div>
       </div> */}
 
-      <Slider1/>
-      <div id="cat">
+      {/* <Slider1/> */}
+      {/* <div id="cat">
         <div><h2><b>Shop By Categories</b></h2></div>
-      </div>
+      </div> */}
       {/* <div className="slider">
         <div className="wrapper">
           <FontAwesomeIcon id="left" icon={faAngleLeft} />
@@ -109,9 +127,9 @@ const HomePage = () => {
       </div> */}
 
       {/* <Carousel/> */}
-      <Slider2/>
+      {/* <Slider2/> */}
       <div className="banner-4">
-        <a href="3"><img src=' https://medvalue5.web.app/images/offer/banner.jpg'  alt=""></img></a>
+        <a href="3"><img src=' https://medvalue5.web.app/images/offer/banner.jpg' alt=""></img></a>
       </div>
 
       <div id="concern">
@@ -189,9 +207,9 @@ const HomePage = () => {
       </div>
 
       <div className="banner-3">
-        <a href="8"><img src='https://medvalue5.web.app/images/offer/b3.jpg'  alt=""></img></a>
+        <a href="8"><img src='https://medvalue5.web.app/images/offer/b3.jpg' alt=""></img></a>
       </div>
-     
+
 
       <div className="customer-comments">
         <div className="con-1">
@@ -227,7 +245,7 @@ const HomePage = () => {
         </div>
       </div>
 
-      <InfoSection/>
+      <InfoSection />
     </div>
   );
 };

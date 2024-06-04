@@ -128,7 +128,7 @@ function Cart() {
                 </Modal.Body>
                 <Modal.Footer>
                     <Button variant="success" onClick={handlePaymentDone}>
-                        Payment Done
+                        Payment Done <i class="bi bi-check2-circle" style={{color:"green"}}></i>
                     </Button>
                     <Button variant="secondary" onClick={handleGooglePayModalClose}>
                         Cancel
@@ -138,7 +138,7 @@ function Cart() {
 
             <Modal show={showSuccess} onHide={handleSuccessClose}>
                 <Modal.Header closeButton>
-                    <Modal.Title>Order Placed Successfully</Modal.Title>
+                    <Modal.Title>Order Placed Successfully <i class="bi bi-check2-circle" style={{color:"green"}}></i></Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
                     <div style={{ textAlign: 'center' }}>
